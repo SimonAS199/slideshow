@@ -21,13 +21,14 @@ nextBtn.addEventListener("click", () => {
             break;
     }
     pointer++;
+    console.log(pointer);
 })
 
 prevBtn.addEventListener("click", () => {
     switch (pointer){
         case 1:
             imageContainer.style.transform = "translateX(-302%)";
-            pointer = 4;
+            pointer = 5;
             break;
         case 2:
             imageContainer.style.transform = "translateX(0%)";
@@ -40,4 +41,5 @@ prevBtn.addEventListener("click", () => {
             break;
     }
     pointer--;
+    console.log(pointer);
 })
